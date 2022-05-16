@@ -8,6 +8,7 @@ const Tours = ({tours,removeTour}) => {
         <div className='underline'></div>
       </div>
       <div>
+        {/* toursをtourに分解して一つずつTourへidを渡す */}
         {tours.map((tour)=>{
           return(
             <Tour key={tour.id} {...tour} removeTour={removeTour}></Tour>

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const Tour = ({id, image, info, price, name, removeTour}) => {
+  // トグルで文字数の切り替え用変数
   const [readMore, setReadMore] = useState(false);
 
   return (
